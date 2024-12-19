@@ -14,7 +14,7 @@ const AddEmployee = () => {
     try {
       //eslint-disable-next-line
       const response = await axios.post(
-        "http://localhost:2000/employees",
+        "https://fsd-proj.onrender.com/employees",
         data,
       );
       alert("Employee added successfully!");
