@@ -1,19 +1,31 @@
 {
-  "name": "emp-backend",
+  "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A backend server for managing employee data using Express and PostgreSQL",
+  "main": "backend.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend.js",
+    "dev": "nodemon backend.js",
+    "build": "echo 'Build step not required for this backend server.'",
+    "clean": "rm -rf dist"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "backend",
+    "employees",
+    "postgresql",
+    "api"
+  ],
+  "author": "Abhishek Renjan U B",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
